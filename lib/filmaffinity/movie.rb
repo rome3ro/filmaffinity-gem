@@ -122,6 +122,12 @@ module FilmAffinity
       nil
     end
 
+    def original
+      document_html.at(Constants.tag(:original)).next_sibling.next_sibling.content.strip
+    rescue
+      nil
+    end
+
     def to_json
       @json_parser.to_json self
     end

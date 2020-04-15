@@ -12,7 +12,8 @@ class JsonMovieParser
       'script' => movie.script,
       'cast' => movie.cast,
       'sinopsis' => movie.sinopsis,
-      'poster_big' => movie.poster_big
+      'poster_big' => movie.poster_big,
+      'original' => movie.original
     }
   end
 
